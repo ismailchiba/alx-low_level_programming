@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main- entry point of the program
- *
- * description :prints the alphabet in lowercase, followed by a new line
- *
- * Return : always 0
- *
+ * main - entry point of the program,
+ * description: prints the alphabet in lowercase, followed by a new line
+ * Return:Always 0 (Success)
  */
 int main(void)
 {
