@@ -9,9 +9,9 @@
 int main(void)
 {
 	int a;
-	int b;
+	char m;
 	/*loop for to print numbers*/
-	for (a = '45'; a <= '58'; a++)
+	for (a = '45'; a < '58'; a++)
 	{	putchar(a);
 	}
 	/*loop for to print alphabet in lowercase */
