@@ -8,10 +8,16 @@
  */
 int main(void)
 {
-	char m;
-	/*loop for to print alphabet in lowercase in reverse*/
-	for (m = 'z'; m >= 'a'; m--)
-	{	putchar(m);
+	int n;
+
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
