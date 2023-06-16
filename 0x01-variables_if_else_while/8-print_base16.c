@@ -18,7 +18,7 @@ int main(void)
 	/*loop for to print alphabet in lowercase */
 	for (m = 'a'; m <= 'f'; m++)
 	{       putchar(m);
-        }
+	}
 	putchar('\n');
 	return (0);
 }
