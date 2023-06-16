@@ -12,7 +12,7 @@ int main(void)
 	/*loop for to print alphabet in lowercase*/
 	for (m = 'a'; m <= 'z'; m++)
 	{
-		if(m == 'e' || m == 'q')
+		if (m == 'e' || m == 'q')
 			continue;
 		putchar(m);
 	}
