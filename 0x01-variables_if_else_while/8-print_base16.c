@@ -12,12 +12,12 @@ int main(void)
 	char m;
 
 	/*loop for to print numbers */
-	for (a = 45; a < 58; a++)
+	for (a = 48; a < 58; a++)
 	{	putchar(a);
 	}
 	/*loop for to print alphabet in lowercase */
-        for (m = 'a'; m <= 'f'; m++)
-        {       putchar(m);
+	for (m = 'a'; m <= 'f'; m++)
+	{       putchar(m);
         }
 	putchar('\n');
 	return (0);
