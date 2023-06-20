@@ -2,12 +2,11 @@
 
 /*
  * main- 
- * description : use function to print _putchar
- * Return : return 0
+ * description: use function to print _putchar
+ * Return: return 0
  *
  */
-
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
