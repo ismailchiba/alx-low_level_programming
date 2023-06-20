@@ -1,19 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+
 /*
  * main- 
  * description : use function to print _putchar
  * Return : return 0
  *
  */
-void _putchar()
-{
-	printf("_putchar\n"); /*print _putchar*/
-}
+
 int main()
 {
-	_putchar();
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
