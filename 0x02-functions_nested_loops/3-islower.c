@@ -2,8 +2,10 @@
 /**
  * _islower() - checks for lowercase
  *
+ * parameter: c integer code ASCII
  * Return: 1 if c lowercase 0 otherwise
  *
+ * 
  */
 int _islower(int c)
 {
