@@ -1,6 +1,7 @@
 #include "main.h"
-/*
+/**
  * jack_bauer - every minute of the day of jack bauer,
+ *
  * Return: no return
  **/
 
