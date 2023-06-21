@@ -14,21 +14,21 @@ void times_table(void)
 		{
 			_putchar(',');
 			c = a * b;
-			if ( c > 9)
-			{	
+			if (c > 9)
+			{
 				_putchar(' ');
 				d = c % 10;
-				e= c / 10;
+				e = c / 10;
 				_putchar(e + '0');
 				_putchar(d + '0');
 			}
 			else
-			{	
+			{
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(c + '0');
 			}
 		}
-		_putchar('$');
 		_putchar('\n');
 	}
 }
