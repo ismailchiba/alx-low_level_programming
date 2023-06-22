@@ -7,22 +7,22 @@
 
 void print_number(int n)
 {
-unsigned int i;
+unsigned int m;
 
 if (n < 0)
 {
-	i = -n;
+	m = -n;
 	_putchar('-');
 }
 else
 {
-	i = n;
+	m = n;
 }
 
-if (i / 10)
+if (m / 10)
 {
-	print_number(i / 10);
+	print_number(m / 10);
 }
 
-_putchar((i % 10) + '0');
+_putchar((m % 10) + '0');
 }
