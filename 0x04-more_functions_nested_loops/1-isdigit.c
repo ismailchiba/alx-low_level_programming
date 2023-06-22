@@ -1,4 +1,5 @@
 #include "main.h"
+
 /*
  *_isdigit - check if the caracter is a digit
  *@c : the caracter to be checked
