@@ -13,8 +13,7 @@ if (n < 0)
 {
 	m = -n;
 	_putchar('-');
-}
-else
+}else
 {
 	m = n;
 }
