@@ -2,7 +2,7 @@
 
 /*
  *print_diagonal - draws a diagonal line on the terminal
- *@n is the number of times the character \
+ *@n is the number of times the character '\'
  */
 
 void print_diagonal(int n)
@@ -11,14 +11,13 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		int i;
-		int j;
+		int i,j;
 
-		for (i = 0; i <n ; i++)
+		for (i = 0; i <n; i++)
 		{
 			for (j = 0; j <= i; j++)
 			{
-				_putchar('\');
+				_putchar('\\');
 			}
 			_putchar('\n');
 		}
