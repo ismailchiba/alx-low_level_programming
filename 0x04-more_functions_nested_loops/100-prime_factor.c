@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /**
  * main - find prime factor of the number 612852475143
