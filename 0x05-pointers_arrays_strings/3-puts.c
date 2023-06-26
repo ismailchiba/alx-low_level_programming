@@ -1,0 +1,12 @@
+#include "main.h"
+
+/**
+ * _puts - prints a string, followed by a new line
+ * @str: the string type char
+ * Description: printing a string followed by new line
+ */
+
+void _puts(char *str)
+{
+	_putchar(*str);
+}
