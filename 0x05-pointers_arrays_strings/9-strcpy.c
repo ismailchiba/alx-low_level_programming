@@ -2,12 +2,11 @@
 #include <string.h>
 
 /**
- * _strcpy - copies the string pointed to by src
+ * char *_strcpy - copies the string pointed to by src
  * @dest : destination array
  * @src : source array
- * Return : array type char
+ * Return: array type char
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i, j;
