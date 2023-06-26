@@ -10,18 +10,18 @@
 void rev_string(char *s)
 {
 	int i, j, k;
-	char *c;
+	char c[strlen(s)];
 	int temp;
 
 	k = strlen(s);
 
-	for ( i = 0, j = k - 1; i < k , j > 0; i++, j--)
+	for ( i = 0, j = k - 1; i < k && j > 0; i++, j--)
 	{
 		temp = s[i];
 		c[j] = temp;
 	}
 
-	for ( i = 0, j = 0; i < k, j < k; i++, j++)
+	for ( i = 0, j = 0; i < k && j < k; i++, j++)
 	{
 		temp = s[i];
 		s[i] = c[j];
