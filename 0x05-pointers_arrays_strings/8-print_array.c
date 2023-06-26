@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  * puts_half - array elements
- * @a :  array of integers
- * @n : n elements of an array
- * description : function that prints n elements of a array,
+ * @a:  array of integers
+ * @n: n elements of an array
+ * description: function that prints n elements of a array,
  *  followed by a new line
  */
 void print_array(int *a, int n)
@@ -13,9 +13,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n-1; i++)
 	{
-			printf("%d", a[i]);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", a[i]);
 	}
 	printf("%d", a[n-1]);
 }
