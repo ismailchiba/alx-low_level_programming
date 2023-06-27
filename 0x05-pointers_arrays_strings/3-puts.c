@@ -11,14 +11,14 @@ void _puts(char *str)
 
 	i = 0;
 	j = 0;/*length of the array*/
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		j++;
 		i++;
 	}
 	for (i = 0; i < j; i++)
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
