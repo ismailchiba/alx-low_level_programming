@@ -4,7 +4,7 @@
 int main(void)
 {
 	const char chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
-	const int num_chars = sizeof(characters) - 1;
+	const int num_chars = sizeof(chars) - 1;
 	
 	srand(time(NULL));
 
@@ -12,11 +12,11 @@ int main(void)
 	
 	int i;
     
-	for (i = 0; i < PASSWORD_LENGTH; ++i) 
+	for (i = 0; i < 12; ++i) 
 	{
-		password[i] = characters[rand() % num_characters];
+		password[i] = chars[rand() % num_chars];
     	}
-    	password[PASSWORD_LENGTH] = '\0'; 
+    	password[12] = '\0'; 
 
 	printf("%s\n", password);
 
