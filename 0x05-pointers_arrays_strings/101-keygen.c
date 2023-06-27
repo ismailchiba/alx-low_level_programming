@@ -5,12 +5,12 @@ int main(void)
 {
 	const char chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
 	const int num_chars = sizeof(chars) - 1;
-	
-	srand(time(NULL));
 
-	char password[12 + 1]; /* +1 for the null terminator */
+	char password[13]; /* length 13*/
 	
 	int i;
+
+	srand(time(NULL));
     
 	for (i = 0; i < 12; ++i) 
 	{
