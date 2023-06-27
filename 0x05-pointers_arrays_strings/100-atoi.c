@@ -9,11 +9,11 @@
 int _atoi(char *s)
 {
 	int i, j, n, len, f, digit;
-	/* i , j for incrementation
+	/**
+	 * i , j for incrementation
 	 * n the return value
 	 * len length of s
-	 *
-	 */
+	 **/
 
 	i = 0;
 	j = 0;
