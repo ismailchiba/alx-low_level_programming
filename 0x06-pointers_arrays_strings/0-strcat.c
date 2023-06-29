@@ -1,12 +1,5 @@
 #include "main.h"
 
-/*
- * _strcat - concatenates two strings
- * @dest: string
- * @src: string
- *
- * Return: string src append to dest
- */
 char *_strcat(char *dest, char *src)
 {
 	int i, k;
