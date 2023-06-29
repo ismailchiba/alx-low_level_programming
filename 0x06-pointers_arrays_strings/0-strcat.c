@@ -4,8 +4,10 @@
  * _stract - concatenates two strings
  * @dest: first string
  * @src: second string
- * Return: string
+ * description: concatenates two strings
+ * return: string
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i, k;
