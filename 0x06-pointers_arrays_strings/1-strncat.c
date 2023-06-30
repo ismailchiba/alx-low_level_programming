@@ -1,11 +1,14 @@
 #include "main.h"
+
 /**
  * _strcat - concatenates two strings
  * @dest: input value
  * @src: input value
  * @n: n bytes from src
+ *
  * Return: string
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
