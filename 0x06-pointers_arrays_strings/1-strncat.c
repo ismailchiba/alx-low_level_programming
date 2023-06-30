@@ -5,7 +5,6 @@
  * @dest: input value
  * @src: input value
  * @n: n bytes from src
- *
  * Return: string
  */
 
