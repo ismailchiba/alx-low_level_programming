@@ -10,8 +10,8 @@ char *_strstr(char *haystack, char *needle)
 {
 	for (; *haystack != '\0'; haystack++)
 	{
-		char *fir = haystack;//first
-		char *sec = needle;//second
+		char *fir = haystack;/*first*/
+		char *sec = needle;/*second*/
 
 		while (*fir == *sec && *sec != '\0')
 		{
