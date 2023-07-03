@@ -3,9 +3,9 @@
 
 /**
  * _strchr - function locates a character
- * @s : input
- * @c : input
- * Return : NULL
+ * @s: input
+ * @c: input
+ * Return: NULL
  **/
 
 char *_strchr(char *s, char c)
