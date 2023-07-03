@@ -2,11 +2,10 @@
 #include <stddef.h>
 /**
  * _strchr -function  that locates a character in a string
- * @dest: the address of memory
- * @n: the element searching for
+ * @s: the address of memory
+ * @c: the element searching for
  * Return: a pointer to the memory area dest
  **/
-
 char *_strchr(char *s, char c)
 {
 	unsigned int i, j;
