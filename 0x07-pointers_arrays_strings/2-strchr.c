@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stddef.h>
-
 /**
  * _strchr - function  that locates a character
  * @s: the address of memory
@@ -18,11 +17,9 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			j = i;
-			break;
+			return (s + i)
 		}
 	}
 	if (j == 0)
 		return (NULL);
-	else
-		return (s + j);
 }
