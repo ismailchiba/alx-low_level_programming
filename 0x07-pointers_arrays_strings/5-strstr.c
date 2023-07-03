@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _strstr - Entry point
@@ -8,7 +7,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	while (*haystack != '\0')
 	{
 		char *fir = haystack;/*first*/
 		char *sec = needle;/*second*/
@@ -21,6 +20,7 @@ char *_strstr(char *haystack, char *needle)
 
 		if (*sec == '\0')
 			return (haystack);
+		haystack++;
 	}
-	return (NULL);
+	return ('\0');
 }
