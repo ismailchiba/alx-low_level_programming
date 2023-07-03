@@ -6,7 +6,7 @@
  * @s: the address of memory
  * @c: the element searching for
  * Return: a pointer to the first occurrence of the character
- **/
+ */
 
 char *_strchr(char *s, char c)
 {
