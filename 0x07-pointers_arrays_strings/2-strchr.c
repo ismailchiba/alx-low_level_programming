@@ -1,13 +1,12 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _strchr - function locates a character
  * @s: input
  * @c: input
- * Return: NULL or locat the c
+ * Return: Always 0 (Success)
  */
-
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
