@@ -1,12 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _atoi - convert a string to an integer.
  * @s : char array
  * Return: integer array
  */
-
 int _atoi(char *s)
 {
 	int i, j, n, len, f, digit;
@@ -64,7 +62,7 @@ int main(int argc, char **argv)
 	{
 		printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
 	}
-	else 
+	else
 		printf("Error\n");
 	return (0);
 }
