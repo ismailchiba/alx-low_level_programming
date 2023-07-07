@@ -1,11 +1,24 @@
-#include<stdio.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _puts - prints a string, followed by a new line
+ * @str: the string type char
+ * Description: printing a string followed by new line
  */
-int main(void)
+
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i, j;
+
+	i = 0;
+	j = 0;/*length of the array*/
+	while (str[i] != '\0')
+	{
+		j++;
+		i++;
+	}
+	for (i = 0; i < j; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
