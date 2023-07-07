@@ -72,7 +72,7 @@ int main(int argc, char **argv)
 			if (*s < '0' || *s > '9')
 				return (printf("Error\n"), 1);
 		}
-		sum += sum + _atoi(argv[argc]);
+		sum += _atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
 	return (0);
