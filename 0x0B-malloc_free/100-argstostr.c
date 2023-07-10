@@ -32,12 +32,12 @@ char *argstostr(int ac, char **av)
 		for (w = 0; av[h][w]; w++)
 		{
 			if (av[h][w] == '\0')
-				str[i + 1] = "\n";
+				str[i + 1] = '\n';
 			else
 				str[i] = av[h][w];
 			i++;
 		}
 	}
-	str[i] = "\n";
+	str[i] = '\n';
 	return (str);
 }
