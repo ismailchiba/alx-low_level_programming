@@ -11,9 +11,9 @@
 char *_strdup(char *str)
 {
 	char *array;
-	unsigned int i, j;
+	unsigned int i;
 
-	i = 0, j = 0;
+	i = 0;
 	if (str == NULL)
 		return (NULL);
 	while (str[i] != '\0')
