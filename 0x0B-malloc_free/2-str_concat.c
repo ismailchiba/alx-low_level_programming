@@ -26,7 +26,11 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k < i + j ; k++)
 	{
 		if (k < i && *s1)
+		{
 			array[k] = s1[k];
+			if (s2 == NULL)
+				return (array);
+		}
 		else
 		{
 			array[k] = s2[l];
@@ -34,5 +38,5 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	return (array);
-	free(array);	
+	free(array);
 }
