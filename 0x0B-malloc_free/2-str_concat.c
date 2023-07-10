@@ -16,6 +16,8 @@ char *str_concat(char *s1, char *s2)
 	i = 0, j = 0, l = 0;
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
+	else
+	{
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
@@ -28,11 +30,12 @@ char *str_concat(char *s1, char *s2)
 		if (k < i)
 			array[k] = s1[k];
 		else
-		{	
+		{
 			array[k] = s2[l];
 			l++;
 		}
 	}
 	return (array);
 	free(array);
+	}
 }
