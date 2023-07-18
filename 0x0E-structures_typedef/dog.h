@@ -1,0 +1,18 @@
+#ifndef DOG_H
+#define DOG_H
+
+/**
+ * struct dog - a dog's structer
+ * @name: string input
+ * @age: integer input
+ * @owner: string input
+ *
+ * Description: dog can have name
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+#endif
