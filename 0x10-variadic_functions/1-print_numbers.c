@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (j < i - 1)
 				printf("%s", separator);
 	}
-	printf("\n");
 	}
+	printf("\n");
 	va_end(args);
 }
