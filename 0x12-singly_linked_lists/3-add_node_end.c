@@ -22,12 +22,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	n_node->len = len;
 	n_node->str = strdup(str);
 	n_node->next = NULL;
-	if (n_node->str == NULL)
-	{
-        /* Memory allocation for the duplicated string failed*/
-		free(n_node);/*Free the allocated memory for the node*/
-		return NULL;
-   	}
 	if (!n_node)
 		return (NULL);
 
