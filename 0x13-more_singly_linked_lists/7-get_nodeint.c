@@ -14,13 +14,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	if (!head || !index)
 		return (NULL);
-	while (current)
+	while (current && i < index)
 	{
-		if (c == index)
-			return (current);
 		current = current->next;
 		c++;
 	}
-	free(current);
-	return (NULL);
+	return (current);
 }
