@@ -10,7 +10,6 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *current = head;
-	listint_t *temp;
 	unsigned int c = 0;/* compare with index */
 
 	if (!head || !index)
@@ -19,9 +18,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (c == index)
 			return (current);
-		temp = current->next;
+		current = current->next;
 		c++;
-		current = temp;
 	}
 	return (NULL);
 }
