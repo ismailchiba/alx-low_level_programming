@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b);
 	i = 0;
 	while (*b)
 	{
-		decimal = (b[i] - '0') * pow(2,len - i);
+		decimal = (b[i] - '0') * pow(2, len - i);
 		i++;
 	}
 	return (decimal);
