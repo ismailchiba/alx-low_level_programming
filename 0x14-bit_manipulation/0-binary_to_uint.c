@@ -8,12 +8,14 @@
 unsigned int binary_to_uint(const char *b);
 {
 	int len = 0, i;
+	unsigned int decimal = 0;
 
 	while (b[len])
 	{
 		len++;
 	}
-	if (*b == NULL)
+	len--;
+	if (b == NULL)
 		return (0);
 	for (i = 0; *b; i++)
 	{
@@ -23,10 +25,8 @@ unsigned int binary_to_uint(const char *b);
 	i = 0;
 	while (*b)
 	{
-		decimal = b[i] * pow(2,(len - 1) - i);
+		decimal = (b[i] - '0') * pow(2,len - i);
 		i++;
 	}
-
-
-
+	return (decimal);
 }
