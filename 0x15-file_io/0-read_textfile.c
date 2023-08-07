@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t c_letters;
 	ssize_t letters_written
 
-	fd = open(filename, O_WRONLY | O_RDONLY | O_APONLY, 0644);
+	fd = open(filename, O_RDONLY);
 
 	if (filename == NULL || !letters)
 		return (0);
