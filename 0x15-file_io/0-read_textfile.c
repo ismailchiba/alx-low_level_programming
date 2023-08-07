@@ -10,7 +10,12 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd = open("example.txt", O_WRONLY | O_RDONLY | O_APONLY, 0644);
+	ssize_t fd;
+	char *cont;
+	ssize_t c_letters;
+	ssize_t letters_written
+
+	fd = open(filename, O_WRONLY | O_RDONLY | O_APONLY, 0644);
 
 	if (filename == NULL || !letters)
 		return (0);
@@ -18,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	char *cont = malloc(letters + 1);/*continer*/
+	cont = malloc(letters + 1);/*continer*/
 
 	if (cont == NULL)
 	{
@@ -26,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	ssize_t c_letters = read(fd, cont, letters);/*count bytes*/
+	c_letters = read(fd, cont, letters);/*count bytes*/
 
 	if (c_letters <= 0)
 	{
@@ -37,7 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	cont[c_letters] = '\0';/*Null terminate the string*/
 
-	ssize_t letters_written = write(STDOUT_FLIENO, cont, c_letters);
+	letters_written = write(STDOUT_FLIENO, cont, c_letters);
 
 	if (letters_written != c_letters)
 	{
