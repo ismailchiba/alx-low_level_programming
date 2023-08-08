@@ -27,20 +27,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	c_letters = read(fd, cont, letters);/*count bytes*/
-	if (c_letters <= 0)
-	{
-		close(fd);
-		free(cont);
-		return (0);
-	}
 	cont[c_letters] = '\0';/*Null terminate the string*/
 	letters_written = write(STDOUT_FILENO, cont, c_letters);
-	if (letters_written != c_letters)
-	{
-		close(fd);
-		free(cont);
-		return (0);
-	}
 	close(fd);
 	free(cont);
 	return (letters_written);
