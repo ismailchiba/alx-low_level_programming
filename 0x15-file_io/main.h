@@ -10,9 +10,10 @@
 
 /* prototype 0-read_textfile.c */
 ssize_t read_textfile(const char *filename, size_t letters);
-
 /* prototype _putchar */
-
 int _putchar(char c);
-
+/* prototype 1-create_file.c */
+int create_file(const char *filename, char *text_content);
+/* prototype 2- */
+int append_text_to_file(const char *filename, char *text_content);
 #endif
